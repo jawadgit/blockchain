@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 44</title>
+</head>
+<script>
+    let data = prompt('enter sansdwich ingredients');
+    sandwiches(data);
+    function sandwiches(data) {
+        let sand = data.split(" ");
+        let sandArray = [];
+        for (i = 0; i < sand.length; i++) {
+            sandArray.push(sand[i])
+        }
+        document.write(`${JSON.stringify(sandArray)} <br>`);
+        document.write(`-------------------------------------------<br>`);
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

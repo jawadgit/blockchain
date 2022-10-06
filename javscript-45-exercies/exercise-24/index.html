@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 24</title>
+</head>
+<script>
+    var result = 'toyota' == 'kia' ? true : false;
+    document.write("'toyota' == 'kia' ? true : false " + result + "<br>");
+
+    var resultwo = 20 > 30 ? true : false;
+    document.write("20 > 30 ? true : false " + resultwo + "<br>");
+
+    var resulthree = 'abc' === 'def' ? true : false;
+    document.write("'abc' === 'def'? true : false " + resulthree + "<br>");
+
+    var resultfour = 'abc' === 'abc' ? true : false;
+    document.write("'abc' === 'abc'? true : false " + resultfour + "<br>");
+
+    var resultfive = 'Abc' == 'abc' ? true : false;
+    document.write("'Abc' === 'abc'? true : false " + resultfive + "<br>");
+
+    var resultsix = 'Abc'.toLocaleLowerCase() == 'abc' ? true : false;
+    document.write("'Abc'.toLocaleLowerCase() === 'abc'? true : false " + resultsix + "<br>");
+
+    var resultseven = 8 >= 10 ? true : false;
+    document.write("8 >= 10 ? true : false " + resultseven + "<br>");
+
+    var resulteight = 8 < 10 && 8 > 10 ? true : false;
+    document.write("8 < 10 && 8 > 10 ? true : false " + resulteight + "<br>");
+
+    var checkIt = 'string';
+    var resultten = Array.isArray(checkIt) ? true : false;
+    document.write("checkIt = 'string'; Array.isArray(checkIt) ? true : false " + resultten + "<br>");
+
+    var arrayIt = ['apple', 'orange'];
+    var resultelenven = Array.isArray(arrayIt) ? true : false;
+    document.write("arrayIt = ['apple', 'orange'];Array.isArray(arrayIt) ? true : false " + resultelenven + "<br>");
+
+    var arrayIt = ['apple', 'orange'];
+    var resulttwelve = arrayIt.includes('orange') ? true : false;
+    document.write("arrayIt = ['apple', 'orange']; arrayIt.includes('orange') ? true : false " + resulttwelve + "<br>");
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

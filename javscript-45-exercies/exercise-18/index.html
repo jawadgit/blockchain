@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 18</title>
+</head>
+<script>
+    let locations = ['pakistan', 'uk', 'dubai', 'africa', 'china'];
+    let sortLocations = [];
+    document.write("original order: " + locations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+    sortLocations = [...locations].sort();
+    document.write("sortLocations order: " + sortLocations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+    document.write("original order: " + locations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+
+    var reverseLocations = [...locations].reverse();
+    document.write("reverseLocations order: " + reverseLocations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+    document.write("original order: " + locations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+
+    var reverseOriginalLocations = locations.reverse();
+    document.write("reverseOriginalLocations order: " + reverseOriginalLocations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+    var backOriginalLocations = locations.reverse();
+    document.write("backOriginalLocations order: " + backOriginalLocations + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+
+
+    var sortorder = locations.sort();
+    document.write("sortorder: " + sortorder + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+    var sortreverseorder = sortorder.reverse();
+    document.write("sortreverseorder: " + sortreverseorder + "<br>");
+    document.write(`-------------------------------------------------------------<br>`);
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

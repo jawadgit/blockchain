@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 11</title>
+</head>
+<script>
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
+
+    // usage example:
+    var names = ['ali', 'abid', 'ali', 'imran', 'asim', 'ali'];
+    var unique = names.filter(onlyUnique);
+
+    document.write(unique);
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

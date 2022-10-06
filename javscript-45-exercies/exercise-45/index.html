@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 45</title>
+</head>
+<script>
+    let carDetails = ['prius', '2022', 'white'];
+    let carObj = ['toyota', ...carDetails];
+    cars(carObj);
+    function cars(carObj) {
+
+        let car = {
+            "brand": carObj[0],
+            "name": carObj[1],
+            "model": carObj[2],
+            "color": carObj[3]
+        };
+        document.write(`${JSON.stringify(car)} <br>`);
+        document.write(`-------------------------------------------------------------------------------------<br>`);
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

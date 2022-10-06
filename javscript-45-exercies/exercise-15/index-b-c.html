@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 15</title>
+</head>
+<script>
+    let guests = [{
+        name: "ali",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "ahmad",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "bilal",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    }];
+    var newGuest = {
+        name: "hamza",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    };
+    var guestLength = guests.length;
+    for (i = 0; i < guestLength; i++) {
+        if (guests[i]['name'] == 'bilal') {
+            guests[i] = newGuest;
+            document.write(`Hi ${guests[i]['name']}. You are invited for ${guests[i]['venue']} at ${guests[i]['time']} on the location ${guests[i]['place']} <br>`);
+        } else {
+            document.write(`Hi ${guests[i]['name']}. You are invited for ${guests[i]['venue']} at ${guests[i]['time']} on the location ${guests[i]['place']} <br>`);
+        }
+    }
+
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

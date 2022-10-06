@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 40</title>
+</head>
+<script>
+    for (i = 0; i < 3; i++) {
+        makeAlbum()
+    }
+    function makeAlbum() {
+        let data = prompt('enter artist name and album title comma seperated');
+        let album = data.split(",");
+        let albumObj = {
+            "name": album[0],
+            "title": album[1]
+        };
+        let albumArray = [];
+        albumArray.push(albumObj);
+        document.write(`${JSON.stringify(albumObj)} <br>`);
+        document.write(`-------------------------------------------<br>`);
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

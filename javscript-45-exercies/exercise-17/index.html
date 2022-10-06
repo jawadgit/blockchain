@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 17</title>
+</head>
+<script>
+    let guests = [{
+        name: "ali",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "ahmad",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "bilal",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "aqib",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    }];
+    document.write(JSON.stringify(guests) + "<br>");
+    document.write(`------------------<br>`);
+    document.write(`you can invite only 2 person for dinner from above list<br>`);
+    document.write(`------------------<br>`);
+    var guestLength = guests.length;
+    for (i = 0; i < 2; i++) {
+        document.write(`Hi ${guests[i]['name']}. Sorry we cant invite you to dinner <br>`);
+        document.write(`------------------<br>`);
+    }
+    guests.splice(0, 2);
+    var guestLength = guests.length;
+    for (i = 0; i < guestLength; i++) {
+        document.write(`Hi ${guests[i]['name']}. You are invited for ${guests[i]['venue']} at ${guests[i]['time']} on the location ${guests[i]['place']} <br>`);
+        document.write(`------------------<br>`);
+    }
+    for (i = 0; i < guestLength; i++) {
+        guests.pop();
+    }
+    document.write(JSON.stringify(guests) + "<br>");
+    document.write(`------------------<br>`);
+
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

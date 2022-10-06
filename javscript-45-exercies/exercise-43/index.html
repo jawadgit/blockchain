@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 43</title>
+</head>
+<script>
+    let magician = ['ainky', 'pinky', 'ponky'];
+    magicians(magician);
+    function magicians(magician) {
+        for (i = 0; i < magician.length; i++) {
+            magician[i] = greatMagician() + ' ' + magician[i];
+            document.write(` ${magician[i]}<br>`);
+
+        }
+    }
+
+    function greatMagician() {
+        return "great Magician";
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

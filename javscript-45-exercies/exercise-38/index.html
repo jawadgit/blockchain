@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 38</title>
+</head>
+<script>
+    let city = ['islamabad', 'lahore', 'karachi'];
+    let country = 'pakistan';
+    let otherCity = 'newyork';
+    for (i = 0; i < city.length; i++) {
+        describeCity(city, country);
+    }
+    describeCity(otherCity, country);
+    function describeCity(city, country) {
+        if (city instanceof Array) {
+            if (city.includes(city[i])) {
+                document.write(`${city[i]} is in  ${country} <br>`);
+            } else {
+                document.write(`${city[i]} is not in  ${country} <br>`);
+            }
+        } else {
+            document.write(`${city} is not in  ${country} <br>`);
+        }
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

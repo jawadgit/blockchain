@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 14</title>
+</head>
+<script>
+    let guests = [{
+        name: "ali",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "ahmad",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    },
+    {
+        name: "bilal",
+        venue: 'dinner',
+        time: "8pm",
+        place: "Serena Hotel"
+    }];
+    var guestLength = guests.length;
+    for (i = 0; i < guestLength; i++) {
+        document.write(`Hi ${guests[i]['name']}. You are invited for ${guests[i]['venue']} at ${guests[i]['time']} on the location ${guests[i]['place']} <br>`);
+    }
+</script>
+</head>
+
+<body>
+</body>
+
+</html>
